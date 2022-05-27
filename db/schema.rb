@@ -13,23 +13,12 @@
 ActiveRecord::Schema.define(version: 2022_05_26_094714) do
 
   # These are extensions that must be enabled in order to support this database
+  enable_extension "adminpack"
   enable_extension "plpgsql"
   enable_extension "uuid-ossp"
 
-  create_table "purchase_orders", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
-    t.string "po_number"
-    t.date "delivery_date"
-    t.date "date"
-    t.text "payment_terms"
-    t.float "amount"
-    t.float "cgst"
-    t.float "sgst"
-    t.float "igst"
-    t.float "tds"
-    t.text "description"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+  
+  
 
   create_table "vendor_infos", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "vendor_company_name"

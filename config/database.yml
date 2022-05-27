@@ -33,7 +33,7 @@ development:
   username: postgres
 
   # The password associated with the postgres role (username).
-  password: Sai000093@
+  password: 1234
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -82,6 +82,6 @@ test:
 #
 production:
   <<: *default
-  database: vendorapi_production
+  database: postgres
   username: postgres
-  password: Sai000093@
+  password: 1234

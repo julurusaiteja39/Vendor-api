@@ -69,6 +69,8 @@ GEM
     concurrent-ruby (1.1.10)
     crass (1.0.6)
     diff-lcs (1.5.0)
+    email_validator (2.2.3)
+      activemodel
     erubi (1.10.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -190,6 +192,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
+  email_validator
   kramdown
   pg (~> 1.1)
   puma (~> 5.0)
@@ -205,7 +208,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 3.0.2p107
+   ruby 3.0.4p208
 
 BUNDLED WITH
    2.3.14
